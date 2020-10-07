@@ -17,6 +17,12 @@ body {
   line-height: 1.6;
 }
 
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -208,16 +214,6 @@ p {
 
 .hero__content {
   margin: 2em 0;
-}
-
-.hero__content .heading {
-  opacity: 0;
-  -webkit-animation-name: scaleBigger;
-          animation-name: scaleBigger;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
 }
 
 .hero__content .sub {

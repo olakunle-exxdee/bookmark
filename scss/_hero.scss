@@ -26,13 +26,6 @@
   &__content {
     margin: 2em 0;
 
-    .heading {
-      opacity: 0;
-      animation-name: scaleBigger;
-      animation-duration: 1s;
-      animation-fill-mode: both;
-    }
-
     .sub {
       margin: 2em;
     }
