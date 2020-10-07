@@ -1,0 +1,32 @@
+$SoftBlue: #5368df;
+$SoftRed: #fa5757;
+$GrayishBlue: #9194a1;
+$VeryDarkBlue: #252b46;
+
+@mixin tablet {
+  @media only screen and (min-width: 46em) {
+    @content;
+  }
+}
+@mixin destop {
+  @media only screen and (min-width: 62em) {
+    @content;
+  }
+}
+
+.heading {
+  color: $VeryDarkBlue;
+  line-height: 1.4;
+  text-align: center;
+}
+.sub {
+  color: #9194a1;
+  font-size: 0.8rem;
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+}
+
+@mixin transit {
+  transition: all 250ms ease-in;
+}

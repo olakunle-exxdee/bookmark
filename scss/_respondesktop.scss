@@ -1,0 +1,101 @@
+@include destop {
+  .heading {
+    font-size: 2rem;
+  }
+
+  .sub {
+    font-size: 0.9rem;
+  }
+
+  .navbar {
+    &__two {
+      .link {
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  .hero {
+    &__img {
+      position: relative;
+      max-width: 600px;
+      .underlay {
+        max-width: 600px;
+        position: absolute;
+        background: $SoftBlue;
+        width: 80%;
+        bottom: 0;
+        min-height: 20rem;
+        z-index: -1;
+        right: -120px;
+        border-top-left-radius: 100px;
+        border-bottom-left-radius: 100px;
+      }
+    }
+    &__content {
+      margin: 0;
+      text-align: left;
+      .heading {
+        font-size: 2rem;
+        text-align: left;
+      }
+
+      .sub {
+        text-align: left;
+        margin: 1em 0;
+      }
+    }
+  }
+
+  //   features start
+  .feature {
+    &__content2 {
+      .bookmark {
+        &__img {
+          position: relative;
+          max-width: 600px;
+          .underlay {
+            max-width: 600px;
+            position: absolute;
+            background: $SoftBlue;
+            width: 80%;
+            bottom: 0;
+            min-height: 20rem;
+            z-index: -1;
+            left: -120px;
+
+            border-bottom-right-radius: 100px;
+          }
+        }
+
+        &__content {
+          margin: 0 2em;
+          text-align: left;
+          .heading {
+            text-align: left;
+          }
+          .sub {
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+  ////   features ends
+  .extension {
+    &__content2 {
+      .version {
+        .heading {
+          font-size: 1.125rem;
+        }
+      }
+
+      .version:nth-of-type(2) {
+        margin: 8em 1em 2em 1em;
+      }
+      .version:nth-of-type(3) {
+        margin: 14em 2em 2em 2em;
+      }
+    }
+  }
+}

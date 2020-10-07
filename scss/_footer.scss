@@ -1,0 +1,49 @@
+.footer {
+  background: $VeryDarkBlue;
+  text-align: center;
+  padding: 1em;
+  img {
+    margin: auto;
+  }
+
+  &__content1 {
+    .item {
+      padding: 0.5em;
+    }
+
+    .list {
+      margin-top: 1em;
+    }
+
+    .link {
+      text-transform: uppercase;
+      font-size: 1rem;
+      color: #eee;
+      @include transit;
+      &:hover {
+        color: $SoftRed;
+        @include transit;
+      }
+    }
+  }
+
+  &__content2 {
+    .social {
+      margin-top: 2em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 20px;
+      }
+
+      .media {
+        display: inline-block;
+      }
+      .media + .media {
+        margin-left: 1em;
+      }
+    }
+  }
+}

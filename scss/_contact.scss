@@ -1,0 +1,111 @@
+.contact {
+  width: 100%;
+  background: $SoftBlue;
+  padding: 2em;
+
+  &__content {
+    .sub {
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 100;
+    }
+    .heading {
+      color: #fff;
+    }
+  }
+
+  &__form {
+    margin: 1em 0 1em 1em;
+    .contactus {
+      .btn1 {
+        display: inline-block;
+        background: $SoftRed;
+        width: 90%;
+        text-align: center;
+        text-transform: capitalize;
+        color: #fff;
+        padding: 0.3em 0;
+        border-radius: 5px;
+        border: 2px $SoftBlue solid;
+        outline: none;
+        @include transit;
+        &:hover {
+          background: #fff;
+          color: $SoftRed;
+          border: 2px $SoftRed solid;
+        }
+      }
+    }
+
+    .wrapper {
+      margin-top: 3em;
+      padding-bottom: 1.5em;
+      position: relative;
+
+      .success {
+        input {
+          border-color: green;
+        }
+
+        .success_img {
+          visibility: visible;
+        }
+      }
+      .error {
+        input {
+          border-color: $SoftRed;
+        }
+
+        .error_img {
+          visibility: visible;
+        }
+        small {
+          background: red;
+          visibility: visible;
+        }
+      }
+
+      img {
+        display: inline;
+        position: absolute;
+        top: 7px;
+        right: 35px;
+      }
+      .success_img {
+        visibility: hidden;
+      }
+      .error_img {
+        visibility: hidden;
+      }
+
+      small {
+        position: absolute;
+        width: 90%;
+        visibility: hidden;
+        color: #fff;
+        font-size: 0.7rem;
+        font-style: italic;
+        bottom: 0;
+        left: 0em;
+        right: 2em;
+        background: $SoftRed;
+        border-radius: 3px;
+      }
+
+      input {
+        display: block;
+        width: 90%;
+        padding: 0.9em 0.5em;
+        border-radius: 5px;
+        outline: none;
+        border: 1px $VeryDarkBlue solid;
+        &::placeholder {
+          color: $GrayishBlue;
+        }
+        &:focus {
+          border: 1px $VeryDarkBlue solid;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,63 @@
+.faq {
+  margin: 4em 2em;
+
+  &__content1 {
+    margin: 2em 0;
+  }
+
+  &__content2 {
+    details {
+      color: $GrayishBlue;
+      font-size: 0.8rem;
+      outline: none;
+    }
+    summary {
+      border-bottom: 1px $GrayishBlue solid;
+      font-size: 0.8rem;
+      color: $VeryDarkBlue;
+      padding: 1em 0;
+      cursor: pointer;
+      outline: none;
+      @include transit;
+    }
+
+    details > summary {
+      list-style: none;
+    }
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    summary::after {
+      position: absolute;
+      content: url(../images/icon-arrow.svg);
+      right: 40px;
+      @include transit;
+    }
+    details[open] summary:after {
+      content: url(../images/icon-arrow1.svg);
+      transform: rotate(180deg);
+      @include transit;
+    }
+
+    .btnwrapper {
+      text-align: center;
+      .btn {
+        display: inline-block;
+        background: $SoftBlue;
+        padding: 0.25em 0.5em;
+        color: #fff;
+        border-radius: 5px;
+        border: 2px $SoftBlue solid;
+        margin: 4em 0;
+        box-shadow: 0px 5px 16px -1px rgba(187, 189, 216, 0.7);
+        @include transit;
+        &:hover,
+        &:focus {
+          background: #fff;
+          color: $SoftBlue;
+        }
+      }
+    }
+  }
+}

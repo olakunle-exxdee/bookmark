@@ -1,0 +1,51 @@
+.extension {
+  &__content2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    .version {
+      max-width: 350px;
+      text-align: center;
+      margin: 2em;
+      padding: 4em 1em 1em 1em;
+      border-radius: 10px;
+      box-shadow: 0px 5px 16px -1px rgba(187, 189, 216, 0.7);
+      @include transit;
+      cursor: pointer;
+      &:hover,
+      &:focus {
+        transform: scale(1.02);
+        @include transit;
+      }
+
+      .brow {
+        margin: auto;
+      }
+      .heading {
+        margin-top: 0.5em;
+      }
+      .sub {
+        margin-bottom: 2em;
+      }
+
+      .btn {
+        background: $SoftBlue;
+        display: inline-block;
+        padding: 0.3em 1em;
+        color: #fff;
+        border-radius: 5px;
+        border: 2px $SoftBlue solid;
+        box-shadow: 0px 5px 16px -1px rgba(187, 189, 216, 0.7);
+        margin-top: 2em;
+        @include transit;
+        &:hover,
+        &:focus {
+          background: #fff;
+          color: $SoftBlue;
+          @include transit;
+        }
+      }
+    }
+  }
+}
