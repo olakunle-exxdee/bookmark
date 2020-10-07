@@ -37,6 +37,7 @@
       }
       .link {
         color: #252b46;
+        font-size: 0.8rem;
         @include transit;
         &:hover {
           background: #fff;

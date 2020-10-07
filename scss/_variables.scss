@@ -3,8 +3,15 @@ $SoftRed: #fa5757;
 $GrayishBlue: #9194a1;
 $VeryDarkBlue: #252b46;
 
+.container {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 2.4rem;
+  margin: 0 auto;
+}
+
 @mixin tablet {
-  @media only screen and (min-width: 25em) {
+  @media only screen and (min-width: 46em) {
     @content;
   }
 }
