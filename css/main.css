@@ -641,6 +641,7 @@ p {
 }
 
 .footer {
+  margin: 0 auto;
   background: #252b46;
   text-align: center;
   padding: 1em;
@@ -864,6 +865,9 @@ p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .footer__content1 .link {
+    font-size: 0.8rem;
   }
   .footer__content2 .social {
     margin-top: 0;
