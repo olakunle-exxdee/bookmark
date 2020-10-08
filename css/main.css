@@ -64,7 +64,7 @@ p {
 .container {
   width: 100%;
   max-width: 1440px;
-  padding: 0 2.4rem;
+  padding: 0 2.4em;
   margin: 0 auto;
 }
 
@@ -302,6 +302,9 @@ p {
   text-transform: capitalize;
   font-size: 1rem;
   color: #9194a1;
+  display: inline-block;
+  padding-bottom: 0.5em;
+  outline: none;
 }
 
 .feature__content2 .link-feature:hover, .feature__content2 .link-feature:focus {
@@ -311,6 +314,10 @@ p {
 
 .feature__content2 .bookmark {
   text-align: center;
+  display: none;
+}
+
+.feature__content2 .bookmark.active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -471,7 +478,7 @@ p {
 .faq__content2 summary::after {
   position: absolute;
   content: url(../images/icon-arrow.svg);
-  right: 40px;
+  right: 1.5rem;
   -webkit-transition: all 250ms ease-in;
   transition: all 250ms ease-in;
 }

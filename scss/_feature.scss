@@ -32,6 +32,9 @@
       text-transform: capitalize;
       font-size: 1rem;
       color: $GrayishBlue;
+      display: inline-block;
+      padding-bottom: 0.5em;
+      outline: none;
 
       &:hover,
       &:focus {
@@ -42,10 +45,13 @@
 
     .bookmark {
       text-align: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
+      display: none;
+      &.active {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
       &__img {
         position: relative;
         max-width: 600px;

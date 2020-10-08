@@ -31,7 +31,7 @@
     summary::after {
       position: absolute;
       content: url(../images/icon-arrow.svg);
-      right: 40px;
+      right: 1.5rem;
       @include transit;
     }
     details[open] summary:after {
